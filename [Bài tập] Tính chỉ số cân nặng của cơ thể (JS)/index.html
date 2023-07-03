@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <script>
+        let height = +prompt("Nhập chiều cao của bạn?");
+        let weight = +prompt("Nhập cân nặng của bạn?");
+        height = parseInt(Number);
+        weight = parseInt(Number);
+        let bmi = weight / (height  ^ 2)
+        if(bmi > 40){
+            alert("Bạn bị béo phì cấp độ 3");
+        }else if(35 <= bmi < 40){
+            alert("Bạn bị béo phì cấp độ 2");
+        }else if(30 <= bmi < 35){
+            alert("Bạn bị béo phì cấp độ 1");
+        }else if(25 <= bmi < 30){
+            alert("Bạn bị thừa cân");
+        }else if(18.5 <= bmi < 25){
+            alert("Bạn bình thường");
+        }else if(17 <= bmi < 18.5){
+            alert("Bạn bị suy dinh dưỡng cấp độ 1");
+        }else if(16 <= bmi < 17){
+            alert("Bạn bị suy dinh dưỡng cấp độ 2");
+        }else if(bmi < 16){
+            alert("Bạn bị suy dinh dưỡng cấp độ 3");
+        }else{
+            alert("nhập sai dữ liệu")
+        }
+    
+    </script>
+</body>
+</html>
